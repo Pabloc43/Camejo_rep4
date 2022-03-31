@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: rgb(57, 186, 53);
+    display: flex;
+    height: 60px;
+    width: 100vw;
+}
+
+.logo img{
+    width: 60px;
+    display: flex;
+}
+
+nav ul{
+    display: none;
+}
+
+
+/* nav {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(87, 85, 85);
+    left: 0;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 100px;
+    z-index: 50;
+    transition: 0.8s;
+}
+
+nav ul a {
+    display: block;
+    padding: 30px;
+}
+
+body {}
+
+nav {}
+
+nav ul li {
+    list-style: none;
+}
+
+
+
+
+.logo label{
+    color: rgb(189, 42, 42);
+    font-size: 20px;
+}
+
+.logo h3{
+    font-size: 8px;
+}
+
+
+
+input[type="checkbox"]:checked {
+    display: none;
+}
+
+main,
+footer{
+    color: black;
+    background-color: blanchedalmond;
+}
+
+*/
+
+form {
+    position: relative;
+    margin-top: 60px;
+}
