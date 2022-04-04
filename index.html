@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./images/arriba.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/c15b744a04.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Price Killer</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/Logo.png" alt="logo">
+            <h3>Price-killer</h3>
+        </div>
+        <input type="checkbox" id="caja">
+            <label for="ocultador" class="mostrar">☰</label>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Espacio Marcas</a></li>
+                <li class="select"><a href="#">Catalogo</a></li>
+                <li><a href="#">Tu cuenta</a></li>
+                <li>&#215</li>
+            </ul>
+        </nav>
+        <div class="formul">
+            <form action="">
+                <input type="search" placeholder="Buscar">
+            </form>
+        </div>
+    </header>
+    <main>
+        <aside class="categorias">
+            <details open class="categories-details">
+                <summary>Filtros</summary>
+                <details open class="categories-details--interno">
+                    <summary>Generos</summary>
+                        <ul>
+                            <li><label for="check1">texto largo</label>  <input type="checkbox" id="check1" checked></li>
+                            <li><label for="check2">texto largo</label>  <input type="checkbox" id="check2" checked></li>
+                            <li><label for="check3">texto largo</label>  <input type="checkbox" id="check3" checked></li>
+                        </ul>
+                </details>
+                <details open class="categories-details--interno">
+                    <summary>Precio</summary>
+                        <h6>Rango:</h6>
+                        <ul class="precio">
+                            <li><input type="number" id="min" min="0" placeholder="Desde"></li>
+                            <li>-</li>
+                            <li><input type="number" id="max" min="0" placeholder="Hasta"></li>
+                        </ul>
+                </details>
+                <details open class="categories-details--interno">
+                    <summary>Marcas</summary>
+                        <ul>
+                            <li><label for="check7">texto largo</label>  <input type="checkbox" id="check7" checked></li>
+                            <li><label for="check8">texto largo</label>  <input type="checkbox" id="check8" checked></li>
+                            <li><label for="check9">texto largo</label>  <input type="checkbox" id="check9" checked></li>
+                        </ul>
+                </details>
+            </details>
+        </aside>
+    <section class="juegos">
+        <ul>
+            <li>
+                <div class="imagen imagen1">
+                    <img src="./images/AC1.jpg" alt="Assasing cred juego">
+                </div> 
+                <div class="textos">
+                    <h3>Titulo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quia adipisci quibusdam vitae. Nam magni ipsa nostrum a, illo optio recusandae cupiditate nobis corporis. Dolor officiis animi reprehenderit nisi dolorum?</p>
+                    <h5>Precio: Caro</h5>
+                    <button>comprar</button>
+                </div>
+            </li>
+        <li>
+            <div class="imagen imagen2">
+                <img src="images/F1.jpg" alt="Free fire juego">
+            </div> 
+            <div class="textos">
+                <h3>Titulo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quia adipisci quibusdam vitae. Nam magni ipsa nostrum a, illo optio recusandae cupiditate nobis corporis. Dolor officiis animi reprehenderit nisi dolorum?</p>
+                <h5>Precio: Barato</h5>
+                <button>comprar</button>
+            </div>
+        </li>
+        <li>
+            <div class="imagen imagen3">
+                <img src="./images/H1.jpg" alt="Halo 3 juego">
+            </div> 
+            <div class="textos">
+                <h3>Titulo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quia adipisci quibusdam vitae. Nam magni ipsa nostrum a, illo optio recusandae cupiditate nobis corporis. Dolor officiis animi reprehenderit nisi dolorum?</p>
+                <h5>Precio: $cash</h5>
+                <button>comprar</button>
+            </div>
+        </li>
+        </ul>
+    </section>
+    </main>
+    <footer>
+        <div>
+            <h3>Contacto:</h3>
+            <ul>
+                <li><h4>Correo:</h4>pabloonicolascamejo@gmail.com</li>
+                <li><h4>Telefono</h4> 099 888 777</li>
+                <li><pre>Pablo Nicolas Camejo Rodriguez 2022
+Creado para <strong><a href="https://matea.social/academia.html#" target="_blank">Matea.</a></strong>
+                </pre></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

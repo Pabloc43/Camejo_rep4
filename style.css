@@ -1,0 +1,710 @@
+/*Generales*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+/*Cabecera*/
+header{
+    background-color: rgb(21, 8, 79);
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 8vw;
+    cursor: pointer;
+
+}
+
+.logo h3{
+    font-size: 35px;
+    color: rgb(255, 251, 0);
+    margin-left: -1.2vw;
+    margin-bottom: -3vw;
+    cursor: pointer;
+
+}
+
+.logo{
+    display: flex;
+    align-items:center;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: flex-end;
+
+}
+
+nav{
+    display: flex;
+    align-items: flex-end;
+    
+}
+
+nav ul li a{
+    margin: 0 0.8vw 0 0.8vw;
+    padding: 1vh .5vw;
+    background-color: rgb(186, 16, 16);
+    border-radius: 4px;
+    cursor: pointer;
+    color: aliceblue;
+    text-decoration: none;
+    transition: 0.5s ease;
+    font-size: 25px;
+}
+
+nav ul li a:hover{
+    background-color: rgb(239, 32, 74);
+    font-weight: 549;
+}
+
+.select a{
+    background-color: rgb(255, 243, 11);
+    color: rgb(49, 19, 19);
+
+}
+
+.formul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 1.7vw;
+    margin-bottom: 3vh;
+}
+
+.formul form input:first-child{
+width: 14vw;
+height: 3.1vh;
+min-height: 30px;
+border-radius: 20px;
+color: #000;
+padding-left: 15px;
+background-image: url(./images/magnifier.png);
+background-repeat: no-repeat;
+background-size: 23px;
+background-position: right;
+
+}
+
+.formul form input:first-child:focus{
+    background-image: none;
+}
+
+#caja{
+    display: none;
+}
+
+
+.mostrar{
+    display: none;
+    cursor: pointer;
+    font-size: 4vh;
+    transition: 0.5s;
+}
+
+.mostrar{
+    order: 1;
+}
+
+nav ul li:last-child{
+    display: none;
+}
+
+/*Contenido*/
+.categorias{
+    display: flex;
+    justify-content: left;
+    margin-top: 20vh;
+}
+
+.categories-details{
+    background-color: rgba(210, 40, 40, 0.567);
+    width: 18vw;
+    border-radius: .5vw;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    padding: 1vh 4vh;
+}
+
+.categories-details summary{
+    font-weight: 700;
+
+}
+
+.categories-details--interno{
+    font-size: 22px;
+}
+
+.categories-details--interno:nth-child(2){
+    margin-top: 1vh;
+}
+
+
+.categories-details--interno:nth-child(4){
+    margin-bottom: 2vh;
+}
+
+
+.categories-details--interno summary{
+    border: solid 2px #000;
+    border-radius: 10px;
+    background-color: rgb(34, 129, 253);
+}
+
+details ul{
+    font-size: 20px;
+    padding: 1vh 2vw;
+}
+
+details ul li{
+    margin-bottom: 0.5vh;
+}
+
+details ul li label{
+    cursor: pointer;
+}
+
+.categories-details--interno summary{
+    cursor: pointer;
+    list-style: none;
+    padding: 0.5vh;
+    padding-left: 1vw;
+    margin-top: 0.25vh;
+}
+
+.precio{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+details h6{
+text-align: center;
+}
+
+#min,
+#max{
+width: 6vw;
+border-radius: 50px;
+padding: 0.2vh 0vw 0.3vh 0.4vw;
+color: #000;
+}
+
+main{
+    background-image: url(./images/fondo5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    background-attachment: fixed;
+
+}
+
+aside{
+    position: absolute;
+}
+
+
+.juegos{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    height: 160vh;
+}
+.juegos ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+
+.juegos ul li{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.textos{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.imagen img{
+    display: flex;
+    width: 30vw;
+    min-width: 400px;
+    border-radius: 1vw;
+    transition: 1s ease;
+}
+
+
+.imagen img:hover{
+    opacity: 0;
+}
+
+.imagen1,
+.imagen2,
+.imagen3{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30vw;
+    width: 30vw;
+    min-width: 400px;
+    border-radius: 1vw;
+    margin-left: 8vh;
+
+}
+
+.imagen1{
+    background-image: url(./images/AC2.jpg);
+}
+.imagen2{
+    background-image: url(./images/f2.jpg);
+
+}
+.imagen3{
+    background-image: url(./images/H2.jpg);
+
+}
+
+.textos{
+    padding: 10px 20px;
+}
+
+.textos h3{
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+.textos h5{
+    margin-bottom: -5px;
+}
+
+.textos p{
+    margin-bottom: 10px;
+}
+
+.textos button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(45, 59, 211);
+    cursor: pointer;
+}
+
+.textos button:hover{
+    transform: scale(1.2);
+    background-color: rgb(27, 27, 174);
+    font-weight: 700;
+    transition: .5s ease;
+}
+
+
+/*Pie de pagina*/
+footer{
+    background-color: rgb(162, 32, 32);
+}
+
+footer div{
+    display: flex; flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 23vw;
+    padding-top: .8vh;
+}
+
+footer div ul{
+    list-style: none;
+    margin:  10px 0 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer div ul li{
+margin-top: 10px;
+}
+
+footer div h3{
+    margin-top: 20px;
+    font-size: 30px;
+    color: rgb(255, 255, 53);
+}
+
+footer div h4{
+    color: rgb(25, 4, 4);
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+pre strong a{
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:992px) and (min-width: 400px){
+/*Cabecera*/
+header{
+    height: 15vh;
+}
+
+.logo img{
+    width: 15vh;
+}
+
+.logo h3{
+    font-size: 25px;
+}
+
+
+nav ul{
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+
+nav{
+    align-items: center;
+    
+}
+
+nav ul li{
+    margin: 1vh 0;
+}
+
+nav ul li a{
+    padding: .6vh .5vw;
+    font-size: 20px;
+}
+
+.formul{
+    align-items: center;
+    margin-top: 9vh;
+}
+
+/*Contenido*/
+aside{
+    position: static !important;
+}
+
+.categorias{
+    justify-content: center;
+    margin-top: 0;
+}
+
+.categories-details{
+    width: 100vw;
+}
+
+.precio{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+details h6{
+text-align: center;
+}
+
+#min,
+#max{
+width: 6vw;
+min-width: 150px;
+}
+
+.juegos{
+    display: flex; 
+    height: min-content
+}
+
+.juegos ul li{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.textos{
+    width: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.imagen{
+    display: flex;
+    justify-content: center;
+}
+
+.imagen img{
+    display: flex;
+    width: 65vw;
+    min-width: 500px;
+}
+
+.imagen1,
+.imagen2,
+.imagen3{
+    background-size: 65vw;
+    width: 65vw;
+    min-width: 500px;
+
+}
+
+.textos{
+    padding: 10px;
+    margin-left: 0vw;
+}
+
+.textos h3{
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.textos h5{
+    margin-bottom: 10px;
+}
+
+.textos p{
+    margin-bottom: 20px;
+}
+
+.juegos{
+    margin-left: -10vw;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+}
+
+
+@media screen and (max-width:400px){
+        header{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .logo img{
+            width: 30vw;
+        }
+        
+        .logo{
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            cursor: pointer;
+        }
+        
+        nav ul{
+            display: flex;
+            list-style: none;
+            align-items: center;
+            flex-direction: column;
+        
+        }
+        
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        
+        nav ul li a{
+            margin: 0 0.8vw 0 0.8vw;
+            padding: 1vh 1vw;
+            background-color: brown;
+            border-radius: 4px;
+            cursor: pointer;
+            color: aliceblue;
+            text-decoration: none;
+            transition: 0.5s ease;
+            
+        }
+
+        nav ul li{
+            margin:1vh
+        }
+        
+        nav ul li a:hover{
+            background-color: crimson;
+            font-weight: 549;
+        }
+        
+        .formul form input:first-child{
+        width: 100vw;
+        height: 3vh;
+        text-align: center;
+        }
+
+        .mostrar{
+            display: block;
+            transition: 0.5s;
+            margin-top: 1vh;
+            margin-bottom: -1vh;
+        }
+    
+        nav{
+            position: fixed;
+            width: 100vw;
+            height: 37vh;
+            background-image: url(./images/arriba.png);
+            background-color: #000;
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size: 40vh;
+            right: -100vw;
+            text-align: center;
+            z-index: 10;
+            transition: 0.8s;
+            background-attachment:scroll;
+        }
+
+        .mostrar:hover ~ nav{
+            right: 0;
+            transition: 1s ease;
+        }
+        nav ul li:last-child{
+            display: block;
+            color: #fff;
+            font-size: 40px;
+        }
+
+        .formul form input{
+            margin-top: 3vh;
+        }
+        html{
+            overflow-x: hidden;
+        }
+    
+        .categorias{
+            margin-top: 0;
+        }
+    
+        .categories-details summary{
+            display: block;
+        
+        }
+        .categories-details--interno summary{
+            display: inline-block;
+        }
+    
+        .categories-details{
+            width: 100vw;
+            text-align: center;
+        }
+    
+        .categories-details--interno summary{
+            width: 75vw;
+            
+        }
+        .categories-details--interno ul{
+            list-style: none;
+        }
+    
+        .precio input{
+            margin: 0 1vw;
+        }
+    
+        aside{
+            position: static;
+        }
+
+        .juegos{
+            height: min-content;
+        }
+
+
+#min,
+#max{
+width: 25vw;
+min-width: 70px;
+}
+
+.juegos{
+    display: flex; 
+    height: min-content;
+    text-align: center;
+}
+
+.juegos ul li{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.textos{
+    width: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.imagen{
+    display: flex;
+    justify-content: center;
+}
+
+.imagen img{
+    display: flex;
+    width: 100vw;
+    min-width: 300px;
+}
+
+.imagen1,
+.imagen2,
+.imagen3{
+    background-size: 100vw;
+    width: 100vw;
+    min-width: 300px;
+
+}
+
+.textos{
+    margin-left: 18vw !important;
+    padding: 10px;
+    margin-left: 0vw;
+    align-items: center;
+}
+
+.textos h3{
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.textos h5{
+    margin-bottom: 10px;
+}
+
+.textos p{
+    margin-bottom: 20px;
+}
+
+.juegos{
+    margin-left: -17vw;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.textos button{
+
+}
+
+    }
