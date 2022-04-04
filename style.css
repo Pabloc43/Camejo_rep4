@@ -349,6 +349,9 @@ pre strong a{
 
 
 @media screen and (max-width:992px) and (min-width: 400px){
+    main{
+        overflow-x: hidden;
+        }
 /*Cabecera*/
 header{
     height: 15vh;
